@@ -18,7 +18,7 @@ interface Basics {
   image: string;
   email: string;
   phone?: string;
-  url: URL;
+  url?: URL;
   summary: string;
   location: Location;
   profiles: Array<Profiles>;
@@ -36,13 +36,13 @@ interface Profiles {
   icon: string,
   network: string;
   username: string;
-  url: URL;
+  url?: URL;
 }
 
 interface Work {
   name: string;
   position: string;
-  url: URL;
+  url?: URL;
   startDate: DateStr;
   endDate: DateStr | null;
   summary: string;
@@ -62,20 +62,20 @@ interface Certificate {
   name: string;
   date: DateStr;
   issuer: string;
-  url: URL;
+  url?: URL;
 }
 
 interface Publication {
   name: string;
   publisher: string;
   releaseDate: DateStr;
-  url: URL;
+  url?: URL;
   summary: string;
 }
 
 interface Education {
   institution: string;
-  url: URL;
+  url?: URL;
   area: string;
   studyType: string;
   startDate: DateStr;
