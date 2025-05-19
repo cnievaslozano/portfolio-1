@@ -481,6 +481,7 @@
   "projects": [
     {
       "name": "ConectaCampo",
+      "url": "https://github.com/cnievaslozano/ConectaCampo",
       "isActive": false,
       "description": "Aplicación web diseñada para conectar directamente a los agricultores con los clientes finales, permitiendo la venta directa de productos agrícolas.",
       "highlights": [
@@ -501,6 +502,7 @@
     },
     {
       "name": "LetterKafka",
+      "url": "https://github.com/cnievaslozano/letterkafka",
       "isActive": false,
       "description": "Plataforma social para amantes de la lectura, permite calificar, reseñar, organizar libros y conectar con otros lectores.",
       "highlights": [
@@ -524,6 +526,7 @@
     {
       "name": "MyProject (CRM para GRANOTA.NET)",
       "isActive": false,
+      "url": "https://github.com/cnievaslozano/crm-myproject",
       "description": "CRM desarrollado a medida para GRANOTA.NET que centraliza la gestión con los clientes, y optimiza el seguimiento de proyectos mediante una interfaz clara y funcionalidades adaptadas.",
       "highlights": [
         "🗂️ Gestión integral de proyectos",
