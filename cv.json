@@ -1,142 +1,218 @@
 {
   "analyticsCode": "",
   "basics": {
-    "name": "Ariel G. Falcón",
-    "label": "Software Developer",
+    "name": "Cristian D. Nievas",
+    "label": "Backend Developer",
     "animated_main_label": "developer",
-    "animated_secondary_initial_label": "software",
-    "animated_secondary_final_label": "full_stack",
+    "animated_secondary_initial_label": "Backend",
+    "animated_secondary_final_label": "backend",
     "image": "/pfp.webp",
-    "email": "falconyumn@gmail.com",
-    "url": "https://www.linkedin.com/in/arielfalcon/",
-    "summary": "Full-Stack web developer, at the moment. I work on Angular and Vue with Java / Spring. Currently learning about AWS, Cloud Computing and DevOps.",
+    "email": "cnievaslozano@gmail.com",
+    "url": "https://www.linkedin.com/in/cristian-david-nievas-lozano/",
+    "summary": "Desarrollador backend junior especializado en Laravel y MySQL, con experiencia en la creación de APIs y sistemas web. Actualmente ampliando conocimientos en Python (FastAPI), computación en la nube (Azure) y DevOps (CI/CD, Docker).",
     "theme": "red",
     "location": {
-      "address": "Alcalá de Henares",
-      "city": "Madrid",
+      "address": "Reus",
+      "city": "Tarragona",
       "countryCode": "ES",
-      "region": "Spain"
+      "region": "España"
     },
     "profiles": [
-      {
-        "network": "X / Twitter",
-        "icon": "ri:twitter-fill",
-        "color": "#1DA1F2",
-        "username": "@arielGfalcon",
-        "url": "https://x.com/arielGfalcon"
-      },
       {
         "network": "LinkedIn",
         "icon": "ri:linkedin-fill",
         "color": "#0066C2",
-        "username": "Ariel Falcón",
-        "url": "https://linkedin.com/in/arielfalcon"
+        "username": "cnievaslozano",
+        "url": "https://www.linkedin.com/in/cristian-david-nievas-lozano/"
       },
       {
         "network": "GitHub",
         "icon": "mdi:github",
         "color": "#929AAB",
-        "username": "ArielFalcon",
-        "url": "https://github.com/ArielFalcon"
+        "username": "cnievaslozano",
+        "url": "https://github.com/cnievaslozano"
       },
       {
         "network": "Email",
         "icon": "ri:mail-fill",
         "color": "#D44638",
-        "username": "Ariel González Falcón",
-        "url": "mailto:falconyumn@gmail.com"
+        "username": "Cristian David Nievas Lozano",
+        "url": "mailto:cnievaslozano@gmail.com"
       }
     ]
   },
   "education": [
     {
-      "institution": "Experis Academy – Spain",
-      "url": "https://www.linkedin.com/school/experis-academy",
-      "area": "Cloud Computing (AWS)",
-      "studyType": "Full-time student",
-      "startDate": "2025-01-01",
-      "endDate": "2025-05-21"
+      "institution": "Universitat Oberta de Catalunya",
+      "url": "https://www.linkedin.com/school/uoc/",
+      "area": "Escuela de Programación Python",
+      "studyType": "Part-time student",
+      "startDate": "2025-04-01",
+      "endDate": null
     },
     {
-      "institution": "TEIDE Formation Center – Spain",
-      "url": "https://www.linkedin.com/company/teide-centros-de-formaci%C3%B3n",
-      "area": "Web Development",
+      "institution": "Fundació Esplai ICT",
+      "url": "https://www.linkedin.com/company/fundaci%C3%B3n-esplai",
+      "area": "Bootcamp SpringBoot & React",
       "studyType": "Full-time student",
-      "startDate": "2023-04-01",
-      "endDate": "2023-09-01"
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-01"
     },
     {
-      "institution": "Calixto García Medical School – Cuba",
-      "url": "https://www.linkedin.com/company/hospital-universitario-calixto-garcia/?originalSubdomain=cu",
-      "area": "Medicine (unfinished)",
+      "institution": "Instituto Baix Camp",
+      "url": "https://www.linkedin.com/school/ins-baix-camp",
+      "area": "CFGS DAW - Desarrollo de Aplicaciones Web",
       "studyType": "Full-time student",
-      "startDate": "2018-9-01",
-      "endDate": "2021-7-01"
+      "startDate": "2022-09-01",
+      "endDate": "2024-05-01"
+    },
+    {
+      "institution": "Instituto Baix Camp",
+      "url": "https://www.linkedin.com/school/ins-baix-camp",
+      "area": "CFGM SMR - Sistemas Microinformáticos y Redes",
+      "studyType": "Full-time student",
+      "startDate": "2020-09-01",
+      "endDate": "2022-05-01"
     }
   ],
   "certificates": [
     {
-      "name": "AWS Certified Developer – Associate",
-      "date": "2025-05-01",
-      "url": "",
-      "issuer": "Amazon"
+      "name": "Microsoft Certified: Azure AI Fundamentals",
+      "date": "2024-08-12",
+      "url": "https://www.credly.com/badges/0f9aa86d-a16e-43a5-88db-49c043c463bb/linked_in_profile",
+      "issuer": "Azure"
     },
     {
-      "name": "C1 Advanced English",
-      "date": "2025-01-03",
-      "url": "https://cert.efset.org/es/6jDrGH",
-      "issuer": "EF SET"
+      "name": "Microsoft Certified: Azure Data Fundamentals",
+      "date": "2024-08-12",
+      "url": "https://www.credly.com/badges/35c212df-eb2d-46e3-ad59-746d7296afa5/linked_in_profile",
+      "issuer": "Azure"
+    },
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "date": "2024-08-05",
+      "url": "https://www.credly.com/badges/56589efa-8b89-4f1a-b7dc-82a48bbf7dbd/linked_in_profile",
+      "issuer": "Azure"
+    },
+    {
+      "name": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      "date": "2024-08-12",
+      "url": "https://www.credly.com/badges/429fd125-c808-4680-b4e3-1fc64a5083cd/linked_in_profile",
+      "issuer": "Azure"
     }
   ],
   "work": [
     {
-      "name": "Zener Soft Consulting",
-      "position": "Full-Stack Developer",
-      "location_type": "Remote",
-      "location": "ES",
-      "url": "https://www.linkedin.com/company/aitor-pelaez-zenerconsulting-com/",
-      "startDate": "2023-07-03",
+      "name": "CIDE Intelligence Solutions",
+      "position": "Técnico de Soporte Informático - PMS, ERP, SQL",
+      "location_type": "Presencial",
+      "location": "Reus, Tarragona",
+      "url": "https://www.linkedin.com/company/cideintelligencesolutions/",
+      "startDate": "2024-11-01",
       "endDate": null,
-      "summary": "Experienced in developing high-complexity, scalable, data-driven projects with a focus on performance, user experience, and system integration. Participated in development of a complex Micro-services, Hexagonal, DDD, Spring Java project.",
+      "summary": "Actualmente brindo soporte técnico especializado en entornos hoteleros, centrado principalmente en la implementación, mantenimiento y soporte del PMS (FrontHotel) del ecosistema ICG. Mi labor combina atención al cliente con análisis de datos mediante SQL, automatización con Python y gestión de infraestructuras locales en servidores y redes.",
       "highlights": [
-        "Developed a data-intensive Angular project for internal use in the national healthcare system, focusing on managing complex data sets and implementing business logic."
+        "Soporte técnico integral a hoteles, centrado en el PMS para gestión de reservas, check-ins y procesos administrativos.",
+        "Gestión de infraestructuras: conectividad del PMS entre servidores y los distintos puestos de trabajo en recepción y administración.",
+        "Automatización de tareas técnicas y operativas mediante scripts en Python para mejorar la eficiencia diaria del equipo técnico."
       ],
       "responsibilities": [
-        "Developed and maintained projects, ensuring scalability, performance, clean code, efficient architecture and robust user experiences.",
-        "Collaborated with cross-functional teams of developers, designers, and project managers to deliver high-quality solutions.",
-        "Ensured code quality and optimized front-end performance to meet user needs and business objectives.",
-        "Managed complex, data-intensive projects, ensuring smooth integration of business logic and user interfaces.",
-        "Designed and developed highly reactive components and workflows to improve application efficiency and user interaction.",
-        "Developed endpoints and services for business logic and data management, ensuring seamless integration with front-end applications."
+        "Atención directa a clientes del sector hotelero, resolviendo incidencias relacionadas con el uso y funcionamiento del PMS.",
+        "Instalación, configuración y mantenimiento del software PMS en servidores locales y estaciones de trabajo.",
+        "Gestión de la infraestructura de red local en hoteles para garantizar la conectividad entre el servidor central y los terminales de recepción.",
+        "Extracción y análisis de datos mediante SQL para generar informes útiles para la gestión hotelera y resolución de casos complejos.",
+        "Desarrollo de scripts en Python para automatizar tareas repetitivas o resolver casos específicos.",
+        "Documentación de procedimientos técnicos para mejorar los tiempos de respuesta y garantizar consistencia en la asistencia."
       ],
       "achievements": [
-        "Optimized front-end performance by resolving critical issues, improving page load times, and enhancing user experience.",
-        "Developed an internal tool to streamline client-owned code documentation, introducing interactive design guidelines and testable components.",
-        "Created a highly complex application for the national healthcare system, successfully handling large-scale data management and implementing intricate business logic.",
-        "Built reusable and scalable components for a multinational client, ensuring consistency and improving code quality across multiple platforms."
+        "Implementación estable de entornos PMS completos en hoteles, asegurando conectividad, rendimiento y facilidad de uso.",
+        "Desarrollo de scripts en Python que automatizan tareas técnicas frecuentes, reduciendo tiempos de soporte.",
+        "Consultas SQL reutilizables para extraer KPIs e informes personalizados orientados a la gestión hotelera."
       ],
       "skills": {
+        "Windows Server": "simple-icons:windows",
+        "SQL Server": "simple-icons:microsoftsqlserver",
+        "Python": "simple-icons:python",
+        "ICG Software": "mdi:application",
+        "ERP": "mdi:file-document-outline",
+        "PMS": "mdi:bed-queen-outline",
+        "TPV": "mdi:cash-register",
+        "Soporte Técnico": "mdi:headset",
+        "Consultas SQL": "mdi:database-search",
+        "Automatización": "mdi:robot"
+      }
+    },
+    {
+      "name": "GRANOTA.NET - MARKETING DIGITAL",
+      "position": "Desarrollador Backend en Prácticas",
+      "location_type": "Presencial",
+      "location": "Reus, Tarragona",
+      "url": "https://www.linkedin.com/company/granota-net/",
+      "startDate": "2023-10-01",
+      "endDate": "2024-05-01",
+      "summary": "Me encargué de iniciar y desarrollar un sistema CRM interno desde cero, con el objetivo de mejorar la eficiencia en la gestión de clientes. Trabajé tanto en el backend con Symfony 5 como en el frontend, aplicando buenas prácticas de desarrollo y diseño de software.",
+      "highlights": [
+        "Diseño y desarrollo completo de un CRM personalizado adaptado a las necesidades internas de la empresa, facilitando el seguimiento de clientes y la automatización de tareas administrativas."
+      ],
+      "responsibilities": [
+        "Desarrollo completo del backend utilizando Symfony 5 y arquitectura MVC.",
+        "Uso de Twig para la creación de vistas dinámicas con componentes reutilizables.",
+        "Diseño e implementación de una base de datos relacional en MySQL para gestionar clientes, tareas e interacciones.",
+        "Control de versiones con Git y configuración de entornos locales mediante Docker.",
+        "Creación de sistemma de roles para usuarios, envío de mails de automatizados."
+      ],
+      "achievements": [
+        "Aprendí Symfony desde cero de forma autodidacta para llevar adelante el proyecto con autonomía.",
+        "Reduje significativamente el tiempo invertido en tareas administrativas gracias a funcionalidades automatizadas dentro del CRM.",
+        "Diseñé una interfaz clara y funcional utilizando Bootstrap 5 y JavaScript.",
+        "Implementé un sistema de roles y permisos que permitió un control preciso de los accesos según perfiles de usuario."
+      ],
+      "skills": {
+        "PHP": "simple-icons:php",
+        "Symfony": "simple-icons:symfony",
         "HTML5": "simple-icons:html5",
         "CSS3": "ri:css3-fill",
-        "SCSS": "simple-icons:sass",
+        "JavaScript": "simple-icons:javascript",
         "Bootstrap": "simple-icons:bootstrap",
-        "JavaScript ECMA6+": "simple-icons:javascript",
-        "TypeScript": "simple-icons:typescript",
-        "Vue": "mdi:vuejs",
-        "Angular": "simple-icons:angular",
-        "Jasmine": "simple-icons:jasmine",
-        "Jest": "simple-icons:jest",
-        "Java": "ri:java-line",
-        "Spring": "simple-icons:spring",
-        "NodeJS": "ri:nodejs-line",
-        "Postman": "simple-icons:postman",
-        "i18n": "simple-icons:i18next",
         "Git": "mdi:git",
         "GitHub": "mdi:github",
-        "Figma": "simple-icons:figma",
-        "Jira": "simple-icons:jira",
-        "Kubernetes": "simple-icons:kubernetes",
-        "Docker": "simple-icons:docker"
+        "Docker": "simple-icons:docker",
+        "MySQL": "simple-icons:mysql"
+      }
+    },
+    {
+      "name": "Dynamic.cat Pontsoft SL.",
+      "position": "Técnico Informático en Prácticas",
+      "location_type": "Presencial",
+      "location": "Reus, Tarragona",
+      "url": "https://www.linkedin.com/company/pontsoft-s-l-/",
+      "startDate": "2020-12-01",
+      "endDate": "2021-07-01",
+      "summary": "Soporte a clientes, realicé mantenimiento y configuración de sistemas operativos (Windows y Linux), así como reparación de equipos (torres, portátiles...etc) y asesoramiento informático.",
+      "highlights": [
+        "Resolución de incidencias técnicas tanto de hardware como de software para usuarios internos y externos.",
+        "Mantenimiento de servidores Windows y Linux asegurando su disponibilidad y rendimiento."
+      ],
+      "responsibilities": [
+        "Atención y soporte técnico a clientes tanto presencial como remoto.",
+        "Reparación, limpieza y configuración de ordenadores portátiles y de sobremesa.",
+        "Instalación y mantenimiento de sistemas operativos Windows y distribuciones Linux.",
+        "Mantenimiento básico de redes y configuración de dispositivos de red.",
+        "Gestión de copias de seguridad y restauración de sistemas.",
+        "Asesoramiento técnico sobre compra y uso de equipamiento informático."
+      ],
+      "achievements": [
+        "Mejora en mis habilidades de atención al cliente, desarrollando la capacidad de identificar rápidamente problemas técnicos y comunicarlos de forma clara.",
+        "Automatización de tareas repetitivas con scripts básicos en batch y bash, optimizando procesos como limpieza de temporales o backups locales."
+      ],
+      "skills": {
+        "Windows": "mdi:microsoft-windows",
+        "Linux": "simple-icons:linux",
+        "Redes": "mdi:lan",
+        "Hardware": "mdi:desktop-classic",
+        "Atención al cliente": "mdi:account-voice",
+        "Soporte técnico": "mdi:tools",
+        "Bash": "simple-icons:gnubash"
       }
     }
   ],
@@ -144,7 +220,7 @@
     {
       "name": "HTML",
       "icon": "simple-icons:html5",
-      "level": "Advanced",
+      "level": "Advanzado",
       "keywords": [
         "Web Development",
         "Frontend"
@@ -153,28 +229,17 @@
     {
       "name": "CSS",
       "icon": "ri:css3-fill",
-      "level": "Advanced",
+      "level": "Advanzado",
       "keywords": [
         "Web Development",
         "Frontend",
-        "Responsive Design"
-      ]
-    },
-    {
-      "name": "SCSS",
-      "icon": "simple-icons:sass",
-      "level": "Advanced",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Preprocessor",
         "Responsive Design"
       ]
     },
     {
       "name": "Tailwind",
       "icon": "mdi:tailwind",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -185,7 +250,7 @@
     {
       "name": "Bootstrap",
       "icon": "simple-icons:bootstrap",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -196,7 +261,7 @@
     {
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
-      "level": "Advanced",
+      "level": "Intermedio",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -207,7 +272,7 @@
     {
       "name": "TypeScript",
       "icon": "simple-icons:typescript",
-      "level": "Advanced",
+      "level": "Básico",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -216,53 +281,9 @@
       ]
     },
     {
-      "name": "Angular",
-      "icon": "simple-icons:angular",
-      "level": "Advanced",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Framework",
-        "UI"
-      ]
-    },
-    {
-      "name": "RxJS",
-      "icon": "simple-icons:reactivex",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Reactive Programming",
-        "JavaScript"
-      ]
-    },
-    {
-      "name": "Vue",
-      "icon": "mdi:vuejs",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    },
-    {
-      "name": "Astro",
-      "icon": "simple-icons:astro",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
       "name": "Node",
       "icon": "ri:nodejs-line",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "Web Development",
         "Backend",
@@ -271,20 +292,9 @@
       ]
     },
     {
-      "name": "PNPM",
-      "icon": "simple-icons:pnpm",
-      "level": "Beginner",
-      "keywords": [
-        "Package Manager",
-        "Web Development",
-        "Frontend",
-        "Backend"
-      ]
-    },
-    {
       "name": "Java",
       "icon": "ri:java-line",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "Web Development",
         "Backend"
@@ -293,7 +303,7 @@
     {
       "name": "Spring",
       "icon": "simple-icons:spring",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "Web Development",
         "Backend",
@@ -303,7 +313,7 @@
     {
       "name": "MongoDB",
       "icon": "simple-icons:mongodb",
-      "level": "Beginner",
+      "level": "Principiante",
       "keywords": [
         "Databases",
         "File",
@@ -314,18 +324,7 @@
     {
       "name": "MySQL",
       "icon": "simple-icons:mysql",
-      "level": "Intermediate",
-      "keywords": [
-        "Backend",
-        "Databases",
-        "SQL",
-        "Relational Database"
-      ]
-    },
-    {
-      "name": "PostgreSQL",
-      "icon": "simple-icons:postgresql",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "Backend",
         "Databases",
@@ -336,7 +335,7 @@
     {
       "name": "Git",
       "icon": "mdi:git",
-      "level": "Advanced",
+      "level": "Advanzado",
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -346,7 +345,7 @@
     {
       "name": "GitHub",
       "icon": "mdi:github",
-      "level": "Advanced",
+      "level": "Advanzado",
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -355,38 +354,27 @@
       ]
     },
     {
-      "name": "AWS",
-      "icon": "simple-icons:amazonaws",
-      "level": "Beginner",
-      "keywords": [
-        "Cloud Computing",
-        "Backend",
-        "Infrastructure"
-      ]
-    },
-    {
       "name": "Docker",
       "icon": "mdi:docker",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "Virtual Environments",
         "Backend"
       ]
     },
     {
-      "name": "Kubernetes",
-      "icon": "mdi:kubernetes",
-      "level": "Beginner",
+      "name": "Azure",
+      "icon": "mdi:microsoft-azure-devops",
+      "level": "Intermedio",
       "keywords": [
-        "Virtual Environments",
-        "Backend",
-        "Container Orchestration"
+        "Cloud",
+        "Backend"
       ]
     },
     {
       "name": "Python",
       "icon": "simple-icons:python",
-      "level": "Beginner",
+      "level": "Intermedio",
       "keywords": [
         "Scripting",
         "Automation",
@@ -394,40 +382,59 @@
       ]
     },
     {
-      "name": "Jest",
-      "icon": "simple-icons:jest",
-      "level": "Intermediate",
-      "keywords": [
-        "Testing",
-        "Web Development",
-        "Frontend",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Jasmine",
-      "icon": "simple-icons:jasmine",
-      "level": "Intermediate",
-      "keywords": [
-        "Testing",
-        "Web Development",
-        "Frontend",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Shell",
-      "icon": "simple-icons:shell",
-      "level": "Beginner",
+      "name": "FastApi",
+      "icon": "simple-icons:fastapi",
+      "level": "Intermedio",
       "keywords": [
         "Scripting",
-        "Automation"
+        "Automation",
+        "Web Development"
+      ]
+    },
+    {
+      "name": "Flask",
+      "icon": "simple-icons:flask",
+      "level": "Intermedio",
+      "keywords": [
+        "Scripting",
+        "Automation",
+        "Web Development"
+      ]
+    },
+    {
+      "name": "PHP",
+      "icon": "simple-icons:php",
+      "level": "Intermedio",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "Scripting"
+      ]
+    },
+    {
+      "name": "Laravel",
+      "icon": "simple-icons:laravel",
+      "level": "Intermedio",
+      "keywords": [
+        "Web Development",
+        "MVC",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Symfony",
+      "icon": "simple-icons:symfony",
+      "level": "Básico",
+      "keywords": [
+        "Web Development",
+        "Framework",
+        "Backend"
       ]
     },
     {
       "name": "Linux",
       "icon": "simple-icons:linux",
-      "level": "Beginner",
+      "level": "Intermedio",
       "keywords": [
         "OS",
         "Scripting",
@@ -437,7 +444,7 @@
     {
       "name": "Swagger",
       "icon": "simple-icons:swagger",
-      "level": "Beginner",
+      "level": "Principiante",
       "keywords": [
         "API",
         "Documentation",
@@ -448,131 +455,90 @@
     {
       "name": "Postman",
       "icon": "simple-icons:postman",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
         "API",
         "Testing",
         "Web Development",
         "Backend"
       ]
-    },
-    {
-      "name": "Figma",
-      "icon": "simple-icons:figma",
-      "level": "Beginner",
-      "keywords": [
-        "Prototyping",
-        "Web Development",
-        "Frontend"
-      ]
     }
   ],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Nativo"
     },
     {
-      "language": "English",
-      "fluency": "Advanced - C1"
+      "language": "Catalán",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio - B1"
     }
   ],
   "projects": [
     {
-      "name": "CV Matching System",
-      "isActive": true,
-      "description": "A propiertary code AI-driven CV matching system to connect the offer and the best candidates. Automates the recruitment process.",
-      "highlights": [
-        "🎯 Tailored job opportunities",
-        "✨ AI-driven complex workflows ",
-        "🚀 80% increase in productivity"
-      ],
-      "stack": {
-        "Python": "simple-icons:python",
-        "Redis": "simple-icons:redis",
-        "Firebase": "simple-icons:firebase",
-        "Google Cloud": "simple-icons:googlecloud",
-        "Claude": "ri:claude-fill",
-        "Groq": "ri:robot-2-fill"
-      },
-      "url": "https://www.gringojobs.com"
-    },
-    {
-      "name": "TODO List",
+      "name": "ConectaCampo",
       "isActive": false,
-      "description": "A simple app to showcase my skills in Angular. It's a TODO list with a beautiful and smooth UI, good user experience and best practices. Not finished yet.",
+      "description": "Aplicación web diseñada para conectar directamente a los agricultores con los clientes finales, permitiendo la venta directa de productos agrícolas.",
       "highlights": [
-        "📝 In progress",
-        "😮‍ Made-from-scratch complex components",
-        "😊 Beautiful and smooth UI, good user experience",
-        "\uD83E\uDD16 Server Side Rendering"
+        "🔧 Backend con Spring Boot",
+        "💻 Frontend en React moderno",
+        "🛢️ Gestión de datos con MySQL",
+        "⚙️ API REST para integración fluida"
       ],
-      "github": "https://github.com/ArielFalcon/TODO-list",
+      "github": "https://github.com/cnievaslozano/ConectaCampo",
       "stack": {
-        "Angular": "simple-icons:angular",
-        "RxJS": "simple-icons:reactivex",
+        "Spring Boot": "simple-icons:springboot",
+        "JavaScript": "simple-icons:javascript",
         "TypeScript": "simple-icons:typescript",
-        "SCSS": "simple-icons:sass",
-        "NodeJS": "ri:nodejs-line",
-        "Firebase": "simple-icons:firebase"
+        "React": "simple-icons:react",
+        "Tailwind CSS": "simple-icons:tailwindcss",
+        "MySQL": "simple-icons:mysql"
       }
     },
     {
-      "name": "Portfolio",
-      "isActive": true,
-      "description": "This website! My personal portfolio, made with Astro. Integrates many themes and key shortcut actions.",
-      "highlights": [
-        "🚀 Fast, modern and SEO-friendly",
-        "🎨 Printable CV generation",
-        "〔N〕Crazy NeoVim mode, try it!"
-      ],
-      "github": "https://github.com/ArielFalcon/portfolio",
-      "stack": {
-        "Astro": "simple-icons:astro",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "NodeJS": "ri:nodejs-line",
-        "PNPM": "simple-icons:pnpm",
-        "Vercel": "simple-icons:vercel"
-      },
-      "url": "https://www.arielfalcon.me"
-    },
-    {
-      "name": "AI Web Scraper",
+      "name": "LetterKafka",
       "isActive": false,
-      "description": "A web scraper that uses AI to extract data from websites. It's a tool to automate the data extraction process, using machine learning to identify and extract data from websites.",
+      "description": "Plataforma social para amantes de la lectura, permite calificar, reseñar, organizar libros y conectar con otros lectores.",
       "highlights": [
-        "🤖 Simple script",
-        "🔍 Data Extraction",
-        "🌐 Web scraping"
+        "📚 Reseñas y puntuaciones de libros",
+        "👥 Seguimiento y feed de actividad",
+        "🛠️ Backend Laravel + Blade + MySQL",
+        "🎨 UI responsiva con Tailwind CSS",
+        "🐍 Scraping masivo de libros con Python"
       ],
+      "github": "https://github.com/cnievaslozano/letterkafka",
       "stack": {
-        "Javascript": "simple-icons:javascript",
-        "Selenium": "simple-icons:selenium",
-        "ChromeDriver": "ri:chrome-fill",
-        "Groq": "ri:robot-2-fill"
-      },
-      "github": "https://github.com/ArielFalcon/ai_web_scrapper"
+        "PHP": "simple-icons:php",
+        "Laravel": "simple-icons:laravel",
+        "Blade": "simple-icons:laravel",
+        "JavaScript": "simple-icons:javascript",
+        "Tailwind CSS": "simple-icons:tailwindcss",
+        "MySQL": "simple-icons:mysql",
+        "Python": "simple-icons:python"
+      }
     },
     {
-      "name": "SpaceX Invaders",
-      "isActive": true,
-      "description": "A Space Invaders game with a retro look, made with Vue3 and TypeScript. It's a fun project to showcase my skills in Vue3 and TypeScript.",
+      "name": "MyProject (CRM para GRANOTA.NET)",
+      "isActive": false,
+      "description": "CRM desarrollado a medida para GRANOTA.NET que centraliza la gestión con los clientes, y optimiza el seguimiento de proyectos mediante una interfaz clara y funcionalidades adaptadas.",
       "highlights": [
-        "🚀 Space Invaders game",
-        "🛸 Retro fun",
-        "🎮 Vue3 + TypeScript"
+        "🗂️ Gestión integral de proyectos",
+        "📬 Registro de incidencias centralizado",
+        "📎 Administración de contenido compartido",
+        "🧩 Backend robusto en Symfony"
       ],
+      "github": "https://github.com/cnievaslozano/crm-myproject",
       "stack": {
-        "Vue3": "ri:vuejs-line",
-        "TypeScript": "simple-icons:typescript",
-        "CSS": "simple-icons:css",
-        "Vite": "simple-icons:vite",
-        "PNPM": "simple-icons:pnpm",
-        "Netlify": "simple-icons:netlify"
-      },
-      "github": "https://github.com/ArielFalcon/spacex-invaders",
-      "url": "https://spacex-invaders.netlify.app/"
+        "PHP": "simple-icons:php",
+        "Symfony": "simple-icons:symfony",
+        "JavaScript": "simple-icons:javascript",
+        "Bootstrap": "simple-icons:bootstrap",
+        "MySQL": "simple-icons:mysql"
+      }
     }
   ]
 }

@@ -6,15 +6,15 @@ import { Icon } from 'astro-icon/components'
 const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
 ---
 
-<Section className={Astro.props.className} title="Experience">
+<Section className={Astro.props.className} title="Experiencia">
   <ul class="flex flex-col">
     {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
       const startYear = new Date(startDate).getFullYear()
-      const endYear = endDate != null ? new Date(endDate).getFullYear() : "Present"
+      const endYear = endDate != null ? new Date(endDate).getFullYear() : "Presente"
       const timeLapse = (endDate!=null?new Date(endDate).getTime():new Date().getTime()) - new Date(startDate).getTime()
       const workedYears = Math.floor(+timeLapse/millisecondsInYear)
       const workedMonths = Math.floor((+timeLapse % millisecondsInYear) / (millisecondsInYear / 12))
-      const workedTime = `${workedYears}y : ${workedMonths}m`
+      const workedTime = `${workedYears}a : ${workedMonths}m`
       const workedDatetime = `P${workedYears}Y${workedMonths}M`
       return (
         <li class="relative print:py-2">
@@ -50,7 +50,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm">
                 {summary && (
                   <div class="flex flex-col gap-1">
-                    <h4 class="print:font-bold" data-ccursor="lift">Summary:</h4>
+                    <h4 class="print:font-bold" data-ccursor="lift">Resumen:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {Array.isArray(summary) ? (
                         summary.map(item => (
@@ -67,7 +67,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
                 <div class="after:from-skin-hue dark:after:to-skin-hue/0 flex relative flex-col print:!h-auto gap-4 print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full print:after:hidden after:h-12 after:content-[''] h-16 group-data-[expanded=true]:after:hidden group-data-[expanded=true]:h-auto overflow-hidden duration-200 ease-out">
                 {responsibilities && (
                   <div class="flex flex-col gap-1">
-                    <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Responsibilities:</h4>
+                    <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Responsabilidades:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {responsibilities.map(responsibility => (
                         <li data-ccursor>{responsibility}</li>
@@ -78,7 +78,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
 
                 {achievements && (
                   <div class="flex flex-col gap-1">
-                    <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Achievements:</h4>
+                    <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Logros:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {achievements.map(achievement => (
                         <li data-ccursor>{achievement}</li>
@@ -89,7 +89,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
                 </div>
 
                 <button data-ccursor="lift" class="print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-muted transition-all hover:text-skin-inverted flex expand-button">
-                  <span class="expand-text">Show more</span>
+                  <span class="expand-text">Mostrar más</span>
                   <Icon name="ri:arrow-up-s-line" class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out group-data-[expanded=true]:rotate-180" width={24} height={24}></Icon>
                 </button>
 
@@ -120,7 +120,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
       const container = button.closest<HTMLElement>('.expand-container')!;
       container.dataset.expanded = container.dataset.expanded === 'true' ? 'false' : 'true';
       const expandText = button.querySelector('.expand-text')!;
-      expandText.innerHTML = container.dataset.expanded === 'true' ? 'Show less' : 'Show more'
+      expandText.innerHTML = container.dataset.expanded === 'true' ? 'Mostrar menos' : 'Mostrar más'
     });
   });
 </script>
