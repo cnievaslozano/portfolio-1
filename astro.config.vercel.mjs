@@ -5,7 +5,7 @@ import icon from 'astro-icon';
 import vercel from "@astrojs/vercel/static";
 import playformCompress from "@playform/compress";
 
-// https://astro.build/config
+// https://astro.build/config .
 export default defineConfig({
   integrations: [
     tailwind(),
