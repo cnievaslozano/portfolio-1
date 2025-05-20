@@ -26,6 +26,5 @@ export default defineConfig({
   ],
   output: "hybrid",
   adapter: netlify(),
-  site: "https://portfolio.cnievaslozano.es",
-  redirects: [],
+  site: "https://portfolio.cnievaslozano.es"
 });
