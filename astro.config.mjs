@@ -1,12 +1,10 @@
-// @ts-check
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import astroIcon from 'astro-icon';
 import mdx from '@astrojs/mdx';
 import playformCompress from "@playform/compress";
-import vercel from "@astrojs/vercel/serverless";
+import netlify from "@astrojs/netlify/functions";
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     tailwind(),
@@ -22,11 +20,11 @@ export default defineConfig({
       CSS: false,
       Image: false,
       Action: {
-        Passed: async () => true,   // https://github.com/PlayForm/Compress/issues/376
+        Passed: async () => true,
       },
     })
   ],
   output: "hybrid",
-  adapter: vercel(),
+  adapter: netlify(),
   site: "https://portfolio.cnievaslozano.es",
 });

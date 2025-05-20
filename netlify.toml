@@ -3,5 +3,10 @@
   NODE_VERSION = "18"
 
 [build]
-  command = "OUTPUT=netlify astro build"
+  command = "astro build"
   publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
