@@ -3,7 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import astroIcon from 'astro-icon';
 import mdx from '@astrojs/mdx';
 import playformCompress from "@playform/compress";
-import netlify from "@astrojs/netlify/functions";
+import netlify from "@astrojs/netlify";
 
 export default defineConfig({
   integrations: [
