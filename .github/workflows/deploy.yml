@@ -47,9 +47,14 @@ jobs:
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         run: |
           install -m 700 -d ~/.ssh
-          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          if grep -q '\\n' <<<"$DEPLOY_SSH_KEY"; then
+            printf '%b' "$DEPLOY_SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          else
+            printf '%s\n' "$DEPLOY_SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          fi
           chmod 600 ~/.ssh/deploy_key
-          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          ssh-keygen -y -f ~/.ssh/deploy_key >/dev/null
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" | tr -d '\r' > ~/.ssh/known_hosts
           tar -czf - -C dist . | ssh -i ~/.ssh/deploy_key \
             -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
             deploy@"$DEPLOY_HOST" receive
