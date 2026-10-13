@@ -1,0 +1,55 @@
+name: Deploy portfolio al VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:        # permite lanzarlo a mano desde la pestaña Actions
+
+concurrency:
+  group: deploy-vps
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  DEPLOY_HOST: 217.154.188.77       # cambiar por el dominio cuando exista
+  # Clave pública del servidor (no es secreta): evita que nos desvíen a otro host.
+  DEPLOY_KNOWN_HOSTS: "217.154.188.77 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFBR5NfshROhZjmYi1UK4K6aookKbyaJW8TNzkpf1Tju"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+
+      - name: Compilar (sitio estático)
+        run: |
+          cp deploy/astro.config.vps.mjs astro.config.vps.mjs
+          pnpm exec astro build --config astro.config.vps.mjs
+          test -s dist/index.html
+
+      - name: Subir al VPS
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          tar -czf - -C dist . | ssh -i ~/.ssh/deploy_key \
+            -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
+            deploy@"$DEPLOY_HOST" receive
