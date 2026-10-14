@@ -29,3 +29,6 @@ yarn-error.log
 
 # Vercel
 .vercel
+
+# Copia temporal de la config de VPS (el CI la crea al desplegar; no se commitea)
+/astro.config.vps.mjs
