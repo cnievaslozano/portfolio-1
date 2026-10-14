@@ -58,9 +58,6 @@ pnpm dev
 ```
 1. Open [**http://localhost:4321**](http://localhost:4321/) in your browser to view the result 🚀
 
-### 4. Customisable colours:
-Change the data-theme of `cv.json` and choose one of the colour themes defined in theme.css, red, blue, green, cyber, pink and default, with its variants in dark mode, or create your own.
-
 ## 🧞 Commands
 
 |     | Command         | Action                                                                       |

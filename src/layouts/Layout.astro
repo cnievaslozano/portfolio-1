@@ -10,13 +10,25 @@ interface Props {
 
 const { title } = Astro.props;
 
-const { image, summary, url, theme } = CV.basics;
+const { image, summary, url } = CV.basics;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="color-scheme" content="light dark" />
+    <script is:inline>
+      // Aplica el tema elegido con el interruptor antes del primer pintado,
+      // para que no haya un parpadeo claro/oscuro. Sin elección guardada,
+      // manda prefers-color-scheme desde el CSS.
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch (e) {}
+    </script>
     <title>{title}</title>
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
@@ -37,7 +49,7 @@ const { image, summary, url, theme } = CV.basics;
     {CV?.analyticsCode && <script is:inline src={CV.analyticsCode} />}
     <Analytics />
   </head>
-  <body data-theme={theme} class="relative bg-skin-fill font-sans">
+  <body class="relative bg-skin-fill font-sans">
     <div class="absolute top-0 -z-10 h-full w-full print:hidden">
       <div class="absolute bottom-auto left-[20%] right-auto top-0 h-[200px] w-[200px] -translate-x-[30%] translate-y-[20%] rounded-full bg-skin-hue/10 blur-[80px] invert-0 dark:bg-white/5"></div>
     </div>

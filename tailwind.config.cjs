@@ -10,7 +10,15 @@ function withOpacity(variableName) {
 }
 
 module.exports = {
-  darkMode: "class",
+  // El modo oscuro sigue prefers-color-scheme salvo que <html data-theme> lo
+  // fuerce (ver src/globals.css), así que `dark:` respeta ambos.
+  darkMode: [
+    "variant",
+    [
+      '@media (prefers-color-scheme: dark) { &:not([data-theme="light"] *) }',
+      '&:is([data-theme="dark"] *)',
+    ],
+  ],
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
