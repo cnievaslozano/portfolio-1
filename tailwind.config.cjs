@@ -23,8 +23,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue': '#5fafd7',
-        'green': '#87d787',
         skin: {
           hue: withOpacity("--color"),
           muted: withOpacity("--muted"),

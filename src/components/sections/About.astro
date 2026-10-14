@@ -2,14 +2,8 @@
 import Section from "../Section.astro";
 import CV from "@cv";
 const { summary } = CV.basics;
-
-const words = summary.split(' ');
 ---
 
 <Section className={Astro.props.className} title="Sobre mí">
-  <p class="font-mono opacity-75 print:font-sans text-skin-hue font-semibold print:text-skin-base print:font-normal w-full select-none">
-    {words.map((word) => (
-      <span class="w-min sm:hover:bg-skin-button-muted transition-all duration-200">{word}</span> <span> </span>
-    ))}
-  </p>
+  <p class="text-pretty">{summary}</p>
 </Section>
