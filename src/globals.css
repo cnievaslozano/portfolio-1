@@ -70,8 +70,37 @@
     }
   }
 
+  html {
+    scrollbar-color: rgb(var(--color-text-muted)) rgb(var(--color-fill));
+  }
+
   body {
-    @apply bg-skin-fill text-skin-base;
+    @apply bg-skin-fill font-sans text-base leading-relaxed text-skin-base antialiased;
+  }
+
+  /* Jerarquía tipográfica: h1 nombre, h2 secciones, h3 puestos y estudios. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold leading-tight text-skin-base;
+    text-wrap: balance;
+  }
+
+  h1 {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  h4 {
+    @apply text-base;
   }
 
   /* Sin color de acento, el subrayado es lo que distingue un enlace. */
@@ -84,17 +113,17 @@
     outline-offset: 2px;
   }
 
-  ::-webkit-scrollbar {
-    width: 8px;
+  /* Márgenes de página al imprimir; el contenido ya no lleva relleno propio. */
+  @page {
+    margin: 1.5cm;
   }
 
-  ::-webkit-scrollbar-track {
-    @apply bg-skin-fill;
+  @media print {
+    astro-dev-toolbar {
+      display: none !important;
+    }
   }
 
-  ::-webkit-scrollbar-thumb {
-    @apply bg-skin-muted rounded;
-  }
   .hover-grad-text {
     @apply text-center text-transparent bg-clip-text transition-all ease-in-out duration-700;
     background-image: linear-gradient(

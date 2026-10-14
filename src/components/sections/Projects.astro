@@ -64,7 +64,7 @@ import { projects } from "@cv";
               
               <ul class="flex print:hidden flex-wrap gap-2 mt-4" aria-label="Technologies used">
                 {stack && Object.entries(stack).map(([label, icon]) => (
-                  <li class="border-skin-hue/60 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs backdrop-blur-sm group/stack">
+                  <li class="border-skin-hue/60 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs group/stack">
                     {icon &&
                       <span class="flex gap-1">
                       <Icon name={icon} width={16} height={16} /> <span class="group-hover/stack:text-skin-hue transition-all duration-200">{label}</span>
