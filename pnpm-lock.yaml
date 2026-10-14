@@ -50,12 +50,6 @@ importers:
       astro-icon:
         specifier: ^1.1.1
         version: 1.1.1
-      gsap:
-        specifier: ^3.12.5
-        version: 3.12.7
-      hotkeypad:
-        specifier: 0.1.1
-        version: 0.1.1
       netlify:
         specifier: ^21.5.0
         version: 21.5.0(@types/node@22.7.4)(picomatch@4.0.2)(rollup@4.41.0)
@@ -3752,9 +3746,6 @@ packages:
     resolution: {integrity: sha512-5v6yZd4JK3eMI3FqqCouswVqwugaA9r4dNZB1wwcmrD02QkV5H0y7XBQW8QwQqEaZY1pM9aqORSORhJRdNK44Q==}
     engines: {node: '>=6.0'}
 
-  gsap@3.12.7:
-    resolution: {integrity: sha512-V4GsyVamhmKefvcAKaoy0h6si0xX7ogwBoBSs2CTJwt7luW0oZzC0LhdkyuKV8PJAXr7Yaj8pMjCKD4GJ+eEMg==}
-
   h3@1.15.3:
     resolution: {integrity: sha512-z6GknHqyX0h9aQaTx22VZDf6QyZn+0Nh+Ym8O/u0SGSkyF5cuTJYKlc8MkzW3Nzf9LE1ivcpmYC3FUGpywhuUQ==}
 
@@ -3831,9 +3822,6 @@ packages:
   hot-shots@10.2.1:
     resolution: {integrity: sha512-tmjcyZkG/qADhcdC7UjAp8D7v7W2DOYFgaZ48fYMuayMQmVVUg8fntKmrjes/b40ef6yZ+qt1lB8kuEDfLC4zw==}
     engines: {node: '>=10.0.0'}
-
-  hotkeypad@0.1.1:
-    resolution: {integrity: sha512-v8e9aByI1ReBX30bL/+dHQwsg+UGZaU4WXEWv72DG74h7fSToUm0udXam5tDCns4NsmWLXKzAL3Rjd9FfTjGXw==}
 
   html-escaper@3.0.3:
     resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
@@ -10977,8 +10965,6 @@ snapshots:
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
 
-  gsap@3.12.7: {}
-
   h3@1.15.3:
     dependencies:
       cookie-es: 1.2.2
@@ -11158,8 +11144,6 @@ snapshots:
   hot-shots@10.2.1:
     optionalDependencies:
       unix-dgram: 2.0.6
-
-  hotkeypad@0.1.1: {}
 
   html-escaper@3.0.3: {}
 
