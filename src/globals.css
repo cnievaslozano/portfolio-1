@@ -13,9 +13,6 @@
     --color-button-accent: 249, 115, 22;
     --color-button-accent-hover: 55, 55, 55;
     --color-button-muted: 244, 239, 238;
-    --color-nvim-button: 95, 175, 215;
-    --color-nvim-blue: 35, 95, 135;
-    --color-nvim-green: 0, 150, 0;
 
     [data-theme="blue"] {
       --color-text-base: 15, 23, 42;
@@ -27,8 +24,6 @@
       --color-button-accent: 59, 130, 246;
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 226, 232, 240;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 0, 150, 0;
     }
 
     [data-theme="red"] {
@@ -41,8 +36,6 @@
       --color-button-accent: 239, 68, 68;
       --color-button-accent-hover: 220, 50, 70;
       --color-button-muted: 245, 245, 245;
-      --color-nvim-blue: 35, 95, 135;
-      --color-nvim-green: 0, 150, 0;
     }
 
     [data-theme="green"] {
@@ -55,8 +48,6 @@
       --color-button-accent: 101, 163, 13;
       --color-button-accent-hover: 120, 220, 120;
       --color-button-muted: 211, 235, 173;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 0, 150, 0;
     }
 
     [data-theme="cyber"] {
@@ -69,8 +60,6 @@
       --color-button-accent: 155, 21, 43;
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 249, 239, 6;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 0, 150, 200;
     }
   }
 
@@ -84,8 +73,6 @@
     --color-button-accent: 227, 77, 10;
     --color-button-accent-hover: 231, 121, 43;
     --color-button-muted: 26, 26, 26;
-    --color-nvim-blue: 95, 175, 215;
-    --color-nvim-green: 135, 215, 135;
 
     [data-theme="blue"] {
       --color-text-base: 248, 250, 252;
@@ -97,8 +84,6 @@
       --color-button-accent: 59, 130, 246;
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 30, 41, 59;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 135, 215, 135;
     }
 
     [data-theme="red"] {
@@ -111,8 +96,6 @@
       --color-button-accent: 248, 113, 113;
       --color-button-accent-hover: 220, 50, 70;
       --color-button-muted: 120, 113, 108;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 135, 215, 135;
     }
 
     [data-theme="green"] {
@@ -125,8 +108,6 @@
       --color-button-accent: 132, 204, 22;
       --color-button-accent-hover: 120, 220, 120;
       --color-button-muted: 34, 44, 34;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 135, 215, 135;
     }
 
     [data-theme="cyber"] {
@@ -139,8 +120,6 @@
       --color-button-accent: 70, 210, 220;
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 25, 81, 86;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 135, 215, 135;
     }
 
     [data-theme="pink"] {
@@ -153,13 +132,11 @@
       --color-button-accent: 255, 105, 180;
       --color-button-accent-hover: 255, 182, 193;
       --color-button-muted: 255, 240, 245;
-      --color-nvim-blue: 95, 175, 215;
-      --color-nvim-green: 135, 215, 135;
     }
   }
 
   body {
-    @apply bg-nvim-bg text-nvim-fg font-mono select-none;
+    @apply font-mono select-none;
   }
 
   ::-webkit-scrollbar {
@@ -167,11 +144,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-nvim-bg;
+    @apply bg-skin-fill;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-nvim-gray rounded;
+    @apply bg-skin-muted rounded;
   }
   .hover-grad-text {
     @apply text-center text-transparent bg-clip-text transition-all ease-in-out duration-700;
