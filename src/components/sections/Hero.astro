@@ -19,7 +19,6 @@ const { city, region, address } = location
       >
         <figure class='print:hidden'>
           <img
-            data-ccursor="lift"
             class='scale-110 sm:grayscale sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale-0'
             height={600}
             width={600}
@@ -48,7 +47,7 @@ const { city, region, address } = location
           </div>
         </div>
       </div>
-      <div data-ccursor="noPadding" class='flex w-max gap-2 py-1 px-2 text-sm text-skin-muted'>
+      <div class='flex w-max gap-2 py-1 px-2 text-sm text-skin-muted'>
         <Icon class='print:hidden sm:group-hover:text-skin-hue' name='mdi:world' width={20} height={20} />
         {address}, {city}, {region}
       </div>
@@ -64,8 +63,7 @@ const { city, region, address } = location
             basics.profiles.map(({network, url, icon, color}) => {
               return (
                 <a
-                  data-ccursor
-                  class="flex flex-col sm:basis-1/2 items-center justify-center rounded-md hover:cursor-none"
+                  class="flex flex-col sm:basis-1/2 items-center justify-center rounded-md"
                   href={url}
                   target="_blank"
                   rel="noreferrer noopener"
@@ -80,7 +78,7 @@ const { city, region, address } = location
           }
         </div>
         <div
-          class="footer-button flex h-40 w-36 flex-col place-items-center rounded-3xl sm:bg-skin-muted p-4 transition-all rotate-0 bg-skin-muted sm:rotate-2 sm:hover:rotate-0 sm:hover:bg-skin-button-accent text-skin-hue sm:hover:text-skin-inverted max-sm:hidden print:hidden" data-ccursor="lift"
+          class="footer-button flex h-40 w-36 flex-col place-items-center rounded-3xl sm:bg-skin-muted p-4 transition-all rotate-0 bg-skin-muted sm:rotate-2 sm:hover:rotate-0 sm:hover:bg-skin-button-accent text-skin-hue sm:hover:text-skin-inverted max-sm:hidden print:hidden"
         >
           <Icon name='ri:command-fill' class='flex-1 w-1/2'/>
           <p class="font-mono font-bold text-center">Abrir opciones</p>

@@ -160,14 +160,6 @@
 
   body {
     @apply bg-nvim-bg text-nvim-fg font-mono select-none;
-
-    .c-cursor {
-      position: fixed;
-      z-index: 9999;
-      pointer-events: none;
-      border-radius: 200px;
-      @apply bg-skin-hue/20;
-    }
   }
 
   ::-webkit-scrollbar {
@@ -180,9 +172,6 @@
 
   ::-webkit-scrollbar-thumb {
     @apply bg-nvim-gray rounded;
-  }
-  .modified-cursor-none {
-    cursor: none !important;
   }
   .hover-grad-text {
     @apply text-center text-transparent bg-clip-text transition-all ease-in-out duration-700;
