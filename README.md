@@ -13,9 +13,6 @@
 
 This project is refactored from the original [**dev-portfolio**](https://github.com/Smilesharks/dev-portfolio) project, thanks for his work.
 
-I also implemented and improved this neovim mode [**neovim-porfolio**](https://github.com/albertoperdomo2/astro-vim)
-![](public/demo.gif)
-
 ## 🛠️ Stack
 
 - [**Astro**](https://astro.build/) - The next-gen web framework.
@@ -23,7 +20,6 @@ I also implemented and improved this neovim mode [**neovim-porfolio**](https://g
 - [**TailwindCSS**](https://tailwindcss.com/) - Utility-first CSS framework.
 - [**Iconify**](https://iconify.design/) - Icon library.
 - [**FancyBox**](https://fancyapps.com/fancybox/3/) - Image viewer.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Dropdown menu with keyboard shortcuts made in pure JavaScript.
 
 ## 🚀 Getting Started
 
