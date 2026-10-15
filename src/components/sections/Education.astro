@@ -1,5 +1,6 @@
 ---
 import Section from '../Section.astro'
+import { SECTION_TITLES } from '@/lib/sections'
 
 import { education } from '@cv'
 import { certificates } from '@cv'
@@ -18,7 +19,7 @@ const monthYear = (date: string) => {
 const isoMonth = (date: string) => date.slice(0, 7)
 ---
 
-<Section className={Astro.props.className} title='Educación'>
+<Section className={Astro.props.className} title={SECTION_TITLES.education}>
   <ul class='space-y-4 py-3 print:space-y-0'>
     {
       education.map(
@@ -68,7 +69,7 @@ const isoMonth = (date: string) => date.slice(0, 7)
 </Section>
 {
     certificates.length > 0 && (
-      <Section className={Astro.props.className} title='Certificaciones'>
+      <Section className={Astro.props.className} title={SECTION_TITLES.certificates}>
         <ul class='space-y-4 py-3 print:space-y-0'>
           {certificates.map(({ name, date, issuer, url }) => {
             return (

@@ -1,5 +1,6 @@
 ---
 import Section from '../Section.astro'
+import { SECTION_TITLES } from '@/lib/sections'
 import { work } from '@cv'
 
 // Las fechas son "AAAA-MM-DD". Se leen como texto para que el huso horario
@@ -37,7 +38,7 @@ const jobs = work.map((job) => {
 })
 ---
 
-<Section className={Astro.props.className} title="Experiencia">
+<Section className={Astro.props.className} title={SECTION_TITLES.experience}>
   <ol class="flex flex-col gap-10 print:gap-6">
     {
       jobs.map((job) => (

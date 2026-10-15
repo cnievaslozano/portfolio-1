@@ -1,9 +1,10 @@
 ---
 import Section from "../Section.astro";
+import { SECTION_TITLES } from "@/lib/sections";
 import CV from "@cv";
 const { summary } = CV.basics;
 ---
 
-<Section className={Astro.props.className} title="Sobre mí">
+<Section className={Astro.props.className} title={SECTION_TITLES.about}>
   <p class="text-pretty">{summary}</p>
 </Section>

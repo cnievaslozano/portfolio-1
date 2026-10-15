@@ -74,6 +74,18 @@
     scrollbar-color: rgb(var(--color-text-muted)) rgb(var(--color-fill));
   }
 
+  /* Scroll suave en los saltos de ancla, salvo que el sistema pida menos movimiento. */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* Deja aire por encima al saltar a una sección. */
+  section[id] {
+    scroll-margin-top: 2rem;
+  }
+
   body {
     @apply bg-skin-fill font-sans text-base leading-relaxed text-skin-base antialiased;
   }

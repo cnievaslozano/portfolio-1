@@ -1,8 +1,10 @@
 ---
+import { slugify } from '@/lib/sections';
+
 const { className, title } = Astro.props;
 ---
 
-<section class:list={["flex flex-col gap-4 print:gap-0", className]}>
+<section id={title ? slugify(title) : undefined} class:list={["flex flex-col gap-4 print:gap-0", className]}>
 	{title && <h2 class="border-b border-skin-muted pb-2 print:pb-1">{title}</h2>}
 	<slot />
 </section>

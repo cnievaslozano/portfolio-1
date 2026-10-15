@@ -1,11 +1,12 @@
 ---
 import Section from "../Section.astro";
+import { SECTION_TITLES } from "@/lib/sections";
 import { Icon } from "astro-icon/components";
 
 import { projects } from "@cv";
 ---
 
-<Section className={Astro.props.className} title="Proyectos">
+<Section className={Astro.props.className} title={SECTION_TITLES.projects}>
   <div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
     {
       projects && projects.map(
