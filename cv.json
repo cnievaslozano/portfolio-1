@@ -2,14 +2,14 @@
   "analyticsCode": "",
   "basics": {
     "name": "Cristian D. Nievas Lozano",
-    "label": "Backend Developer",
+    "label": "Desarrollador Backend · ERP, SQL y Cloud",
     "animated_main_label": "developer",
     "animated_secondary_initial_label": "Backend",
     "animated_secondary_final_label": "backend",
     "image": "/pfp.webp",
     "email": "cnievaslozano@gmail.com",
     "url": "https://www.linkedin.com/in/cristian-david-nievas-lozano/",
-    "summary": "Desarrollador backend junior especializado en Laravel y MySQL, con experiencia en la creación de APIs y sistemas web. Actualmente ampliando conocimientos en Python (FastAPI), computación en la nube (Azure) y DevOps (CI/CD, Docker).",
+    "summary": "Desarrollador backend junior, especializado en Laravel y MySQL y con experiencia en la creación de APIs y sistemas web. Desde 2024 trabajo en CIDE Intelligence Solutions, donde llevo un equipo de soporte y los proyectos de migración de clientes a la nueva suite en la nube de ICG (ERP y TPV): conozco el software de gestión desde dentro y desde la operación del cliente (retail, hostelería, stocks y contabilidad). Me interesa llevar esa visión de negocio al desarrollo backend y sigo formándome en Python (FastAPI), Azure, Docker y CI/CD, con cuatro certificaciones Microsoft.",
     "location": {
       "address": "Reus",
       "city": "Tarragona",
