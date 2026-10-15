@@ -7,10 +7,31 @@ import Experience from "@/components/sections/Experience.astro";
 import Hero from "@/components/sections/Hero.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
+import SectionNav from "@/components/SectionNav.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
+import { SECTION_TITLES, slugify } from "@/lib/sections";
 
 import CV, { basics } from "@cv";
 const { name } = basics;
+
+// Entradas del menú lateral, en el orden de la página y solo para las secciones
+// que se pintan (las mismas condiciones que en <main>). "Inicio" es la cabecera.
+const section = (title: string) => ({ id: slugify(title), label: title });
+const menuItems = [
+  { id: "inicio", label: "Inicio" },
+  section(SECTION_TITLES.about),
+  section(SECTION_TITLES.experience),
+  section(SECTION_TITLES.projects),
+  ...(CV?.education
+    ? [
+        section(SECTION_TITLES.education),
+        ...(CV.certificates?.length > 0
+          ? [section(SECTION_TITLES.certificates)]
+          : []),
+      ]
+    : []),
+  section(SECTION_TITLES.skills),
+];
 ---
 
 <Layout title={`${name} - Portfolio`}>
@@ -23,8 +44,10 @@ const { name } = basics;
 
   <div
     id="inicio"
-    class="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-12 print:max-w-none print:p-0"
+    class="relative mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-12 print:max-w-none print:p-0"
   >
+    <SectionNav items={menuItems} />
+
     <header class="flex flex-col gap-6">
       <div class="flex justify-end print:hidden">
         <ThemeSwitch />
