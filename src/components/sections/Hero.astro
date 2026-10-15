@@ -36,7 +36,7 @@ const isMail = (url: string) => url.startsWith('mailto:')
   >
     {
       profiles.map(({ network, url, icon }) => (
-        <li class="flex items-center gap-3">
+        <li>
           <a
             href={url}
             class="inline-flex items-center gap-2"
@@ -46,78 +46,15 @@ const isMail = (url: string) => url.startsWith('mailto:')
               : {})}
           >
             <Icon name={icon} width={20} height={20} aria-hidden="true" />
-            {/* En el correo se ve la dirección, para poder leerla y copiarla. */}
+            {/* En el correo se ve la dirección, para poder leerla. Al pulsarla,
+                mailto: abre el cliente de correo del visitante. */}
             <span>{isMail(url) ? url.slice('mailto:'.length) : network}</span>
             {isExternal(url) && (
               <span class="sr-only"> (se abre en una pestaña nueva)</span>
             )}
           </a>
-          {isMail(url) && (
-            <>
-              {/* mailto: no hace nada sin una app de correo configurada; copiar sí. */}
-              <button
-                type="button"
-                hidden
-                data-copy={url.slice('mailto:'.length)}
-                class="text-sm text-skin-muted underline underline-offset-4 hover:text-skin-base"
-              >
-                Copiar
-              </button>
-              <span class="sr-only" role="status" data-copy-status />
-            </>
-          )}
         </li>
       ))
     }
   </ul>
 </div>
-
-<script>
-  // Copia al portapapeles. La API moderna solo existe en contextos seguros y
-  // puede estar bloqueada (p. ej. en un iframe); en ese caso se usa el método
-  // clásico con un textarea temporal.
-  const copyText = async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text)
-      return true
-    } catch {}
-
-    const area = document.createElement('textarea')
-    area.value = text
-    area.setAttribute('readonly', '')
-    area.style.position = 'fixed'
-    area.style.opacity = '0'
-    document.body.appendChild(area)
-    area.select()
-
-    let copied = false
-    try {
-      copied = document.execCommand('copy')
-    } catch {}
-    area.remove()
-    return copied
-  }
-
-  // Sin JavaScript el botón no se muestra y queda el enlace mailto:.
-  document
-    .querySelectorAll<HTMLButtonElement>('button[data-copy]')
-    .forEach((button) => {
-      const status = button.parentElement?.querySelector('[data-copy-status]')
-      const label = button.textContent
-      button.hidden = false
-
-      button.addEventListener('click', async () => {
-        const copied = await copyText(button.dataset.copy ?? '')
-        button.focus()
-        button.textContent = copied ? 'Copiado' : 'No se pudo copiar'
-        if (status) {
-          status.textContent = copied ? 'Dirección de correo copiada.' : ''
-        }
-
-        setTimeout(() => {
-          button.textContent = label
-          if (status) status.textContent = ''
-        }, 2000)
-      })
-    })
-</script>
