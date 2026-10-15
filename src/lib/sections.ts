@@ -7,7 +7,7 @@ export const SECTION_TITLES = {
   about: 'Sobre mí',
   experience: 'Experiencia',
   projects: 'Proyectos',
-  education: 'Educación',
+  education: 'Formación',
   certificates: 'Certificaciones',
   skills: 'Habilidades',
 } as const
