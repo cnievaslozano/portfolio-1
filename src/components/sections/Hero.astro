@@ -17,10 +17,10 @@ const isMail = (url: string) => url.startsWith('mailto:')
     <img
       src={versioned(image)}
       alt={`Foto de ${name}`}
-      width={96}
-      height={96}
+      width={120}
+      height={120}
       loading="eager"
-      class="size-24 shrink-0 rounded-full object-cover print:hidden"
+      class="size-24 shrink-0 rounded-full object-cover sm:size-[7.5rem] print:hidden"
     />
     <div class="flex flex-col gap-1">
       <h1>{name}</h1>
