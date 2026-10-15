@@ -103,25 +103,27 @@
   "work": [
     {
       "name": "CIDE Intelligence Solutions",
-      "position": "Técnico de Soporte Informático - PMS, ERP, SQL",
+      "position": "Consultor de Soporte e Implantación - ERP, TPV y PMS",
       "location_type": "Presencial",
       "location": "Reus, Tarragona",
       "url": "https://www.linkedin.com/company/cideintelligencesolutions/",
       "startDate": "2024-11-01",
       "endDate": null,
-      "summary": "Actualmente brindo soporte técnico especializado en entornos hoteleros, centrado principalmente en la implementación, mantenimiento y soporte del PMS (FrontHotel) del ecosistema ICG. Mi labor combina atención al cliente con análisis de datos mediante SQL, automatización con Python y gestión de infraestructuras locales en servidores y redes.",
+      "summary": "Responsable de un equipo de soporte de tres personas con cartera propia de clientes de retail y hostelería. Doy soporte a la suite de gestión de ICG instalada en local sobre Windows —ICG Manager (ERP), FrontRest y FrontRetail (TPV) y FrontHotel (PMS)— y me encargo de los proyectos de migración de esos clientes a la nueva suite en la nube (Hioffice y Hiopos), así como de la implantación de clientes nuevos o procedentes de otros sistemas. Combino la parte técnica (SQL, copias de seguridad, instalación y migración de entornos) con el conocimiento del negocio: contabilidad, stocks y operativa de comercios y de hostelería.",
       "highlights": [
         "Soporte técnico integral a hoteles, centrado en el PMS para gestión de reservas, check-ins y procesos administrativos.",
         "Gestión de infraestructuras: conectividad del PMS entre servidores y los distintos puestos de trabajo en recepción y administración.",
         "Automatización de tareas técnicas y operativas mediante scripts en Python para mejorar la eficiencia diaria del equipo técnico."
       ],
       "responsibilities": [
-        "Atención directa a clientes del sector hotelero, resolviendo incidencias relacionadas con el uso y funcionamiento del PMS.",
-        "Instalación, configuración y mantenimiento del software PMS en servidores locales y estaciones de trabajo.",
-        "Gestión de la infraestructura de red local en hoteles para garantizar la conectividad entre el servidor central y los terminales de recepción.",
-        "Extracción y análisis de datos mediante SQL para generar informes útiles para la gestión hotelera y resolución de casos complejos.",
-        "Desarrollo de scripts en Python para automatizar tareas repetitivas o resolver casos específicos.",
-        "Documentación de procedimientos técnicos para mejorar los tiempos de respuesta y garantizar consistencia en la asistencia."
+        "Responsable de un equipo de soporte de tres personas y de su cartera de más de 100 clientes.",
+        "Responsable de los proyectos de migración de la suite en Windows a la nueva suite en la nube (Hioffice y Hiopos).",
+        "Implantación de clientes nuevos y de clientes procedentes de otros sistemas.",
+        "Soporte técnico de la suite ICG en Windows: ICG Manager (ERP), FrontRest y FrontRetail (TPV) y FrontHotel (PMS).",
+        "Instalación y migración de entornos, copias de seguridad y revisión de errores en los entornos de los clientes.",
+        "Consultas SQL a medida para informes, revisión de datos y resolución de casos complejos.",
+        "Reporte de incidencias al fabricante mediante su sistema de ticketing.",
+        "Revisión de la contabilidad de los clientes."
       ],
       "achievements": [
         "Implementación estable de entornos PMS completos en hoteles, asegurando conectividad, rendimiento y facilidad de uso.",
@@ -129,16 +131,19 @@
         "Consultas SQL reutilizables para extraer KPIs e informes personalizados orientados a la gestión hotelera."
       ],
       "skills": {
-        "Windows Server": "simple-icons:windows",
+        "ICG Manager": "mdi:application",
+        "FrontRest": "mdi:silverware-fork-knife",
+        "FrontRetail": "mdi:store-outline",
+        "FrontHotel": "mdi:bed-queen-outline",
+        "Hioffice": "mdi:cloud-outline",
+        "Hiopos": "mdi:cash-register",
         "SQL Server": "simple-icons:microsoftsqlserver",
+        "Windows Server": "simple-icons:windows",
         "Python": "simple-icons:python",
-        "ICG Software": "mdi:application",
-        "ERP": "mdi:file-document-outline",
-        "PMS": "mdi:bed-queen-outline",
-        "TPV": "mdi:cash-register",
-        "Soporte Técnico": "mdi:headset",
-        "Consultas SQL": "mdi:database-search",
-        "Automatización": "mdi:robot"
+        "Migración de entornos": "mdi:database-sync-outline",
+        "Copias de seguridad": "mdi:backup-restore",
+        "Ticketing": "mdi:ticket-outline",
+        "Contabilidad": "mdi:calculator-variant-outline"
       }
     },
     {
