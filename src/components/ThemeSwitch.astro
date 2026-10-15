@@ -1,15 +1,26 @@
 ---
+import { Icon } from 'astro-icon/components'
+
 // Interruptor claro/oscuro. Sin JavaScript no se muestra: el tema sigue
 // entonces a prefers-color-scheme (ver src/globals.css).
+//
+// El icono muestra el modo al que se cambia: luna en claro, sol en oscuro. Lo
+// alterna el CSS (variante dark:, que sigue prefers-color-scheme y data-theme),
+// así que no hay parpadeo. El script solo mantiene la etiqueta accesible.
+//
+// Al botón no se le pone ninguna clase de display: pisaría el atributo hidden.
 ---
 
 <button
   id="theme-toggle"
   type="button"
   hidden
-  class="text-sm text-skin-muted hover:text-skin-base print:hidden"
+  aria-label="Cambiar a modo oscuro"
+  title="Cambiar a modo oscuro"
+  class="p-2 text-skin-muted hover:text-skin-base print:hidden"
 >
-  Cambiar a modo oscuro
+  <Icon name="ri:moon-line" width={20} height={20} class="block dark:hidden" aria-hidden="true" />
+  <Icon name="ri:sun-line" width={20} height={20} class="hidden dark:block" aria-hidden="true" />
 </button>
 
 <script>
@@ -24,9 +35,11 @@
       root.dataset.theme ? root.dataset.theme === "dark" : media.matches;
 
     const render = () => {
-      button.textContent = isDark()
+      const label = isDark()
         ? "Cambiar a modo claro"
         : "Cambiar a modo oscuro";
+      button.setAttribute("aria-label", label);
+      button.title = label;
     };
 
     button.hidden = false;
