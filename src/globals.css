@@ -14,6 +14,7 @@
    */
   :root {
     color-scheme: light;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* arranca rápido y se asienta despacio */
     --color-fill: 255, 255, 255; /* fondo #fff */
     --color-text-base: 17, 17, 17; /* texto #111 */
     --color-text-muted: 85, 85, 85; /* secundario #555 */
@@ -115,9 +116,42 @@
     @apply text-base;
   }
 
-  /* Sin color de acento, el subrayado es lo que distingue un enlace. */
+  /* Sin color de acento, el subrayado es lo que distingue un enlace. En reposo
+     es más tenue (50 %, aún bien visible) y se aviva al pasar por encima. */
   a {
     @apply underline underline-offset-4;
+    text-decoration-color: rgba(var(--color-text-base), 0.5);
+    transition: text-decoration-color 250ms ease;
+  }
+  a:hover {
+    text-decoration-color: rgb(var(--color-text-base));
+  }
+
+  /* El subrayado se separa un poco del texto al pasar por encima, salvo que se
+     pida menos movimiento (el cambio de color se mantiene). */
+  @media (prefers-reduced-motion: no-preference) {
+    a {
+      transition:
+        text-decoration-color 250ms ease,
+        text-underline-offset 300ms var(--ease-out);
+    }
+    a:hover {
+      text-underline-offset: 6px;
+    }
+  }
+
+  /* Aviso de llegada tras elegir una sección en el menú (ver SectionNav.astro):
+     la línea bajo el título se oscurece y vuelve a su tono. Solo cambia de color. */
+  @keyframes landed {
+    from {
+      border-bottom-color: rgb(var(--color-text-base));
+    }
+    to {
+      border-bottom-color: rgb(var(--muted));
+    }
+  }
+  h2.landed {
+    animation: landed 1200ms ease-out;
   }
 
   :focus-visible {

@@ -140,19 +140,39 @@ const { items } = Astro.props
     // acaba antes de poder subir esa sección arriba (p. ej. "Certificaciones"),
     // seguiría marcada la que elegiste y no la última. Se recalcula con el
     // siguiente scroll del usuario.
+    //
+    // Al llegar, la línea bajo el título de la sección se oscurece y se
+    // desvanece (clase .landed, solo cambia de color): marca dónde has
+    // aterrizado también cuando el salto es instantáneo.
+    const land = (id: string) => {
+      const heading = document.getElementById(id)?.querySelector('h2')
+      if (!heading) return
+      heading.classList.remove('landed')
+      void heading.offsetWidth // reinicia la animación si se repite
+      heading.classList.add('landed')
+      heading.addEventListener(
+        'animationend',
+        () => heading.classList.remove('landed'),
+        { once: true }
+      )
+    }
+
     for (const link of links) {
       link.addEventListener('click', () => {
-        setActive(link.dataset.sectionLink ?? '')
+        const id = link.dataset.sectionLink ?? ''
+        setActive(id)
         locked = true
 
         const unlock = () => {
+          if (!locked) return
           locked = false
           window.clearTimeout(unlockTimer)
           window.removeEventListener('scrollend', unlock)
+          land(id)
         }
         window.clearTimeout(unlockTimer)
         window.addEventListener('scrollend', unlock, { once: true })
-        unlockTimer = window.setTimeout(unlock, 1000)
+        unlockTimer = window.setTimeout(unlock, 800)
 
         if (popover?.matches(':popover-open')) popover.hidePopover()
       })
@@ -173,7 +193,7 @@ const { items } = Astro.props
     line-height: 1.25rem;
     color: rgb(var(--color-text-muted));
     text-decoration: none;
-    transition: color 200ms ease;
+    transition: color 250ms ease;
   }
 
   .tick {
@@ -181,7 +201,7 @@ const { items } = Astro.props
     width: 0.75rem;
     height: 1px;
     background-color: currentColor;
-    transition: width 300ms ease;
+    transition: width 450ms var(--ease-out);
   }
 
   .section-link:hover {
@@ -254,13 +274,15 @@ const { items } = Astro.props
     border-radius: 0.75rem;
     background-color: rgb(var(--color-fill));
     color: rgb(var(--color-text-base));
+    /* Sube y se funde al abrir; --lift es cuánto sube (0 si se pide menos movimiento). */
+    --lift: 0.75rem;
     opacity: 0;
-    transform: translateY(0.5rem);
+    transform: translateY(var(--lift));
     transition:
-      opacity 180ms ease,
-      transform 180ms ease,
-      display 180ms allow-discrete,
-      overlay 180ms allow-discrete;
+      opacity 220ms ease,
+      transform 360ms var(--ease-out),
+      display 360ms allow-discrete,
+      overlay 360ms allow-discrete;
   }
   .menu-popover:popover-open {
     opacity: 1;
@@ -269,7 +291,7 @@ const { items } = Astro.props
   @starting-style {
     .menu-popover:popover-open {
       opacity: 0;
-      transform: translateY(0.5rem);
+      transform: translateY(var(--lift));
     }
   }
   /* Filas de 44px: tamaño cómodo para el dedo. */
@@ -296,12 +318,19 @@ const { items } = Astro.props
     }
   }
 
+  /* Con "reducir movimiento" se quita todo lo que desplaza algo (la línea que
+     crece, el menú que sube) y se conservan los fundidos de color y opacidad,
+     que no producen sensación de movimiento. */
   @media (prefers-reduced-motion: reduce) {
-    .section-link,
-    .tick,
-    .menu-button,
-    .menu-popover {
+    .tick {
       transition: none;
+    }
+    .menu-popover {
+      --lift: 0px;
+      transition:
+        opacity 220ms ease,
+        display 220ms allow-discrete,
+        overlay 220ms allow-discrete;
     }
   }
 
