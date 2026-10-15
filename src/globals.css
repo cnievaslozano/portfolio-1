@@ -88,7 +88,8 @@
   }
 
   body {
-    @apply bg-skin-fill font-sans text-base leading-relaxed text-skin-base antialiased;
+    @apply bg-skin-fill font-sans text-base leading-[1.7] text-skin-base antialiased;
+    font-optical-sizing: auto;
   }
 
   /* Jerarquía tipográfica: h1 nombre, h2 secciones, h3 puestos y estudios. */
@@ -100,20 +101,44 @@
     text-wrap: balance;
   }
 
+  /* Nombre y títulos de sección en serifa de display: solo existe en peso 400,
+     así que se impide que el navegador fabrique una negrita falsa. */
+  h1,
+  h2 {
+    @apply font-display font-normal tracking-tight;
+    font-synthesis-weight: none;
+  }
+
   h1 {
-    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+    @apply text-[2.5rem] leading-[1.05] sm:text-[3.5rem];
   }
 
   h2 {
-    @apply text-xl;
+    @apply text-[1.875rem];
   }
 
+  /* Puestos y estudios, en la sans del texto. */
   h3 {
-    @apply text-lg;
+    @apply text-lg tracking-tight;
   }
 
+  /* Etiquetas de subapartado (Responsabilidades, Logros): mono pequeño en
+     mayúsculas y espaciado. */
   h4 {
-    @apply text-base;
+    @apply font-mono text-xs font-medium uppercase tracking-[0.14em] text-skin-muted;
+  }
+
+  /* Viñetas con guion largo, más editoriales que el punto. Si el navegador
+     no admite `content` en ::marker, se queda el punto de siempre. */
+  ul.list-disc > li::marker {
+    content: '–  ';
+    color: rgb(var(--color-text-muted));
+  }
+
+  /* Al seleccionar texto, colores invertidos. */
+  ::selection {
+    background-color: rgb(var(--color-text-base));
+    color: rgb(var(--color-fill));
   }
 
   /* Sin color de acento, el subrayado es lo que distingue un enlace. En reposo

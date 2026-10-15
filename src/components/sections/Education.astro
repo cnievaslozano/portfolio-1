@@ -51,7 +51,7 @@ const isoMonth = (date: string) => date.slice(0, 7)
                   </a>
                 </h3>
                 <div class='text-sm text-skin-muted'>{area}</div>
-                <p class='right-0 top-0 text-xs text-skin-muted first-letter:uppercase md:absolute'>
+                <p class='right-0 top-0 font-mono text-xs text-skin-muted first-letter:uppercase md:absolute'>
                   <time datetime={isoMonth(startDate)}>{monthYear(startDate)}</time> –{' '}
                   {endDate ? (
                     <time datetime={isoMonth(endDate)}>{monthYear(endDate)}</time>
@@ -100,7 +100,7 @@ const isoMonth = (date: string) => date.slice(0, 7)
                     </a>
                   </h3>
                   <div class='text-sm text-skin-muted'>{issuer}</div>
-                  <time datetime={isoMonth(date)} class='right-0 top-0 text-xs text-skin-muted first-letter:uppercase md:absolute md:block'>
+                  <time datetime={isoMonth(date)} class='right-0 top-0 font-mono text-xs text-skin-muted first-letter:uppercase md:absolute md:block'>
                     {monthYear(date)}
                   </time>
                 </div>

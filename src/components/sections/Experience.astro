@@ -55,7 +55,7 @@ const jobs = work.map((job) => {
                 job.name
               )}
             </p>
-            <p class="text-sm text-skin-muted">
+            <p class="font-mono text-[0.8125rem] text-skin-muted">
               <time datetime={job.startDate}>{job.startYear}</time> –{' '}
               {job.endYear ? <time datetime={job.endDate}>{job.endYear}</time> : 'Presente'}
               <span class="print:hidden">
@@ -105,7 +105,7 @@ const jobs = work.map((job) => {
 
           {
             job.technologies.length > 0 && (
-              <p class="text-sm text-skin-muted print:hidden">
+              <p class="font-mono text-[0.8125rem] text-skin-muted print:hidden">
                 <span class="font-semibold text-skin-base">Tecnologías:</span>{' '}
                 {job.technologies.join(', ')}
               </p>

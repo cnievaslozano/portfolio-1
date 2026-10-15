@@ -54,9 +54,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        // Tipografía del sistema: sin descargas, sin parpadeo de carga y sin
-        // peticiones a terceros.
+        // Fuentes autoalojadas con @fontsource (ver Layout.astro); detrás van
+        // las del sistema, que se ven mientras cargan o si falla la descarga.
         sans: [
+          '"Geist Variable"',
           "system-ui",
           "-apple-system",
           "Segoe UI",
@@ -66,7 +67,18 @@ module.exports = {
           "Noto Sans",
           "sans-serif",
         ],
+        // Serifa de display: nombre, títulos de sección y cargo (en cursiva).
+        display: [
+          '"Instrument Serif"',
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          '"Times New Roman"',
+          "serif",
+        ],
+        // Fechas, ubicación, tecnologías y menú.
         mono: [
+          '"Geist Mono Variable"',
           "ui-monospace",
           "SFMono-Regular",
           "Menlo",
