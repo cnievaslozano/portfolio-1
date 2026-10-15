@@ -2,6 +2,7 @@
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import '../globals.css';
 import CV from "@cv";
+import { versioned } from "@/lib/versioned";
 import Analytics from '@vercel/analytics/astro';
 
 interface Props {
@@ -33,7 +34,7 @@ const { image, summary, url } = CV.basics;
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="preload" as="image" href={image} />
+    <link rel="preload" as="image" href={versioned(image)} />
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />

@@ -1,6 +1,7 @@
 ---
 import { basics } from '@cv'
 import { Icon } from 'astro-icon/components'
+import { versioned } from '@/lib/versioned'
 
 const { name, label, image, location, email, profiles } = basics
 const { city, region, address } = location
@@ -14,7 +15,7 @@ const isMail = (url: string) => url.startsWith('mailto:')
 <div class="flex flex-col gap-6">
   <div class="flex items-center gap-5">
     <img
-      src={image}
+      src={versioned(image)}
       alt={`Foto de ${name}`}
       width={96}
       height={96}
