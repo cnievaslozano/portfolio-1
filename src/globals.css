@@ -122,7 +122,7 @@
     @apply text-lg tracking-tight;
   }
 
-  /* Etiquetas de subapartado (Responsabilidades, Logros): mono pequeño en
+  /* Etiquetas de subapartado (Responsabilidades): mono pequeño en
      mayúsculas y espaciado. */
   h4 {
     @apply font-mono text-xs font-medium uppercase tracking-[0.14em] text-skin-muted;

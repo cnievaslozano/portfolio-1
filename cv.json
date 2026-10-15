@@ -125,11 +125,6 @@
         "Reporte de incidencias al fabricante mediante su sistema de ticketing.",
         "Revisión de la contabilidad de los clientes."
       ],
-      "achievements": [
-        "Implementación estable de entornos PMS completos en hoteles, asegurando conectividad, rendimiento y facilidad de uso.",
-        "Desarrollo de scripts en Python que automatizan tareas técnicas frecuentes, reduciendo tiempos de soporte.",
-        "Consultas SQL reutilizables para extraer KPIs e informes personalizados orientados a la gestión hotelera."
-      ],
       "skills": {
         "ICG Manager": "mdi:application",
         "FrontRest": "mdi:silverware-fork-knife",
@@ -165,12 +160,6 @@
         "Control de versiones con Git y configuración de entornos locales mediante Docker.",
         "Creación de sistemma de roles para usuarios, envío de mails de automatizados."
       ],
-      "achievements": [
-        "Aprendí Symfony desde cero de forma autodidacta para llevar adelante el proyecto con autonomía.",
-        "Reduje significativamente el tiempo invertido en tareas administrativas gracias a funcionalidades automatizadas dentro del CRM.",
-        "Diseñé una interfaz clara y funcional utilizando Bootstrap 5 y JavaScript.",
-        "Implementé un sistema de roles y permisos que permitió un control preciso de los accesos según perfiles de usuario."
-      ],
       "skills": {
         "PHP": "simple-icons:php",
         "Symfony": "simple-icons:symfony",
@@ -204,10 +193,6 @@
         "Mantenimiento básico de redes y configuración de dispositivos de red.",
         "Gestión de copias de seguridad y restauración de sistemas.",
         "Asesoramiento técnico sobre compra y uso de equipamiento informático."
-      ],
-      "achievements": [
-        "Mejora en mis habilidades de atención al cliente, desarrollando la capacidad de identificar rápidamente problemas técnicos y comunicarlos de forma clara.",
-        "Automatización de tareas repetitivas con scripts básicos en batch y bash, optimizando procesos como limpieza de temporales o backups locales."
       ],
       "skills": {
         "Windows": "mdi:microsoft-windows",
